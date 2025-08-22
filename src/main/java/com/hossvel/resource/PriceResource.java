@@ -21,9 +21,9 @@ public class PriceResource {
     IServicePrice iServicePrice;
 
     @GET
-    public Uni<List<Price>> getAll() {
+    public Uni<List<Price>> getHistoryPrice() {
 
-    return iServicePrice.getAll();
+    return iServicePrice.getHistoryPrice();
 
     }
 

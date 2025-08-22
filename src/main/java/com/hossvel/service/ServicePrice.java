@@ -13,7 +13,7 @@ public class ServicePrice implements IServicePrice{
    
     
     @Override
-    public Uni<List<Price>> getAll(){
+    public Uni<List<Price>> getHistoryPrice(){
                   Date now = new Date();
          
     return Uni.createFrom().item(List.of(
