@@ -21,6 +21,7 @@ public class PriceResource {
     IServicePrice iServicePrice;
 
     @GET
+     @Path("/priceHistory")
     public Uni<List<Price>> getHistoryPrice() {
 
     return iServicePrice.getHistoryPrice();
